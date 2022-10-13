@@ -8,11 +8,36 @@
 
     <link rel="stylesheet" href="./css/normalize.css">
 
-    
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <!--Fin fuentes-->
 
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="header__nav">
+            <div>
+                <a href="index.html">
+                    <img class="header__nav-logo" src="./assets/img/MorseLogo.svg" alt="Logo">
+                </a>
+            </div>
+            <div>
+                <box-icon name='menu' class="header__nav-menuIcon" size="cssSize" color="white"></box-icon>
+                <ul  class="header__nav-menu inactive">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
