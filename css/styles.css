@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -19,16 +18,10 @@ body {
 }
 
 .header__nav {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: relative;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem 2rem;
   width: 100%;
   height: auto;
@@ -65,3 +58,53 @@ body {
   text-decoration: none;
   color: #BEBEBE;
 }
+.header__welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: auto;
+}
+.header__welcome-left {
+  display: flex;
+  align-items: center;
+}
+.header__welcome-image {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+}
+.header__welcome-title {
+  padding: 0 10px;
+  line-height: 1.4rem;
+}
+.header__welcome-title b {
+  font-size: 1.2rem;
+}
+.header__welcome-notif {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #BEBEBE;
+  border-radius: 10px;
+}
+.header__welcome-notif-icon {
+  position: absolute;
+  width: 24px;
+  height: auto;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+}
+.header__welcome-notif-count {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 12px;
+  right: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */
