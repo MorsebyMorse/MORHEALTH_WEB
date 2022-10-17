@@ -20,23 +20,6 @@
 </head>
 <body>
     <header>
-        <nav class="header__nav">
-            <div>
-                <a href="index.html">
-                    <img class="header__nav-logo" src="./assets/img/MorseLogo.svg" alt="Logo">
-                </a>
-            </div>
-            <div>
-                <box-icon name='menu' class="header__nav-menuIcon" size="cssSize" color="white"></box-icon>
-                <ul  class="header__nav-menu inactive">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </nav>
-
         <div class="header__welcome">
             <div class="header__welcome-left">
                 <a href="#">
@@ -65,9 +48,7 @@
             <input class="search__input" type="text" placeholder="Buscar...">
         </div>
         <section class="reminders">
-            <div class="reminders__title">
-                <h2>Recordatorios</h2>
-            </div>
+            <h2 class="reminders__title">Recordatorios</h2>
             <div class="reminder">
                 <div class="reminder__item">
                     <div class="reminder__item-time">
@@ -111,7 +92,62 @@
                 <p>Su porcentaje saludable <br> <span>1 Oct 2022</span> </p>
             </div>
         </section>
+        <section class="progress">
+            <div class="progress__head">
+                <h2 class="progress__head-title">Su progreso</h2>
+                <box-icon class="progress__head-icon" name="dots-horizontal-rounded" color="white" size="cssSize"></box-icon>
+            </div>
+            <div class="progress__graphic">
+                <img src="./assets/img/Inicio/Chart.png" alt="Gráfica de progreso">
+            </div>
+        </section>
+        
+        <section class="modules">
+            <h2 class="modules__title">Modulos</h2>
+            <div class="modules__container">
+                <div class="modules__container__card">
+                    <h3 class="modules__container__card-title">Fitness</h3>
+                    <div class="modules__container__card-image">
+                        <img src="./assets/img/Inicio/fitness-icon.png" alt="Imagen de pesas">
+                    </div>
+                </div>
+                <div class="modules__container__card">
+                    <h3 class="modules__container__card-title">Recordatorios</h3>
+                    <div class="modules__container__card-image">
+                        <img src="./assets/img/Inicio/recordatories-icon.png" alt="Imagen de calendario">
+                    </div>
+                </div>
+                <div class="modules__container__card">
+                    <h3 class="modules__container__card-title">Nutrición</h3>
+                    <div class="modules__container__card-image">
+                        <img src="./assets/img/Inicio/nutrition-icon.png" alt="Imagen de manzana">
+                    </div>
+                </div>
+                <div class="modules__container__card">
+                    <h3 class="modules__container__card-title">Lifestyle</h3>
+                    <div class="modules__container__card-image">
+                        <img src="./assets/img/Inicio/lifestyle-icon.png" alt="Imagen de lifestyle">
+                    </div>
+                </div>
+        </section>
     </main>
+
+    <nav class="header__nav">
+        <div>
+            <a href="index.html">
+                <img class="header__nav-logo" src="./assets/img/MorseLogo.svg" alt="Logo">
+            </a>
+        </div>
+        <div>
+            <box-icon name='menu' class="header__nav-menuIcon" size="cssSize" color="white"></box-icon>
+            <ul  class="header__nav-menu inactive">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>

@@ -87,7 +87,6 @@ body {
   font-size: 1.2rem;
 }
 .header__welcome-notif {
-  z-index: -1;
   position: relative;
   width: 40px;
   height: 40px;
@@ -112,7 +111,6 @@ body {
 }
 
 .search {
-  z-index: -1;
   position: relative;
   display: flex;
   width: calc(100% - 40px);
@@ -143,12 +141,11 @@ body {
 }
 .reminders__title {
   padding: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #BEBEBE;
 }
 .reminders .reminder {
-  z-index: -1;
   position: relative;
   display: flex;
   width: 100%;
@@ -221,4 +218,63 @@ body {
   font-weight: 500;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.progress {
+  width: calc(100% - 40px);
+  margin: 15px auto;
+}
+.progress__head {
+  display: flex;
+  margin-bottom: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+.progress__head-title {
+  padding: 5px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #BEBEBE;
+}
+.progress__head-icon {
+  padding: 2px 15px;
+  background-color: #031728;
+  border-radius: 15px;
+}
+.progress__graphic img {
+  width: 100%;
+}
+
+.modules {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+}
+.modules__title {
+  padding: 5px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #BEBEBE;
+  margin-bottom: 8px;
+}
+.modules__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+  width: 100%;
+}
+.modules__container__card {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #223159;
+  border-radius: 20px;
+  box-shadow: -2px 2px 18px 3px rgba(91, 93, 97, 0.51);
+  -webkit-box-shadow: -2px 2px 18px 3px rgba(91, 93, 97, 0.51);
+  -moz-box-shadow: -2px 2px 18px 3px rgba(91, 93, 97, 0.51);
+}
+.modules__container__card-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=styles.css.map */
